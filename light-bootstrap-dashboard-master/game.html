@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+<div id="main">
+   
+</div>
+    <input type="submit" onclick="sub();">
+</body>
+<script>
+    function sub(){
+    var dict = {
+        lessons: [
+            {
+                title: "lesson one",
+                inputs: [
+                    {
+                        "id": "usrInp",
+                        "expectedInput": "private",
+                    }
+                    
+                ]
+            }
+        ]
+    }
+    
+    for(var item in dict.lessons[0].inputs){
+        var div = document.createElement('div');
+        document.getElementById("main").appendChild(div);
+    }
+    }
+</script>
+</html>
